@@ -15,13 +15,20 @@
 \contentsline {section}{\numberline {1.4}Expected Results}{4}{}%
 \contentsline {section}{\numberline {1.5}Timeline}{4}{}%
 \contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{5}{}%
-\contentsline {section}{\numberline {2.1}Design web service academic information system based multiplatform \cite {paper_10}}{5}{}%
-\contentsline {section}{\numberline {2.2}Design and Implementation of a Digital Notice Board and Forum Discussion System \cite {paper_11}}{6}{}%
-\contentsline {section}{\numberline {2.3}Course Selling Website Using MERN Stack \cite {paper_12}}{6}{}%
-\contentsline {section}{\numberline {2.4}A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite {paper_3}}{7}{}%
-\contentsline {section}{\numberline {2.5}A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite {paper_14}}{8}{}%
-\contentsline {section}{\numberline {2.6}CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}{9}{}%
-\contentsline {section}{\numberline {2.7}The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite {paper_13}}{9}{}%
+\contentsline {section}{\numberline {2.1}technological stack and system architecture}{5}{}%
+\contentsline {subsection}{\numberline {2.1.1}Design web service academic information system based multiplatform \cite {paper_10}}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}Design and Implementation of a Digital Notice Board and Forum Discussion System \cite {paper_11}}{6}{}%
+\contentsline {subsection}{\numberline {2.1.3}Course Selling Website Using MERN Stack \cite {paper_12}}{6}{}%
+\contentsline {section}{\numberline {2.2}Functions}{7}{}%
+\contentsline {section}{Schedule matcher}{7}{}%
+\contentsline {section}{\numberline {2.3}*}{7}{}%
+\contentsline {subsection}{\numberline {2.3.1}A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite {paper_3}}{7}{}%
+\contentsline {paragraph}{Course rater}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite {paper_14}}{8}{}%
+\contentsline {paragraph}{Super planner}{8}{}%
+\contentsline {subsection}{\numberline {2.3.3}CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}{8}{}%
+\contentsline {subsection}{\numberline {2.3.4}The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite {paper_13}}{9}{}%
+\contentsline {section}{\numberline {2.4}CONTRIBUTION TEMPORARY}{10}{}%
 \contentsline {chapter}{\numberline {3}METHODOLOGY}{11}{}%
 \contentsline {section}{\numberline {3.1}System Design}{11}{}%
 \contentsline {section}{\numberline {3.2}Data}{12}{}%
