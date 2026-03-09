@@ -1,0 +1,78 @@
+\chapter{LITERATURE REVIEW}
+	
+This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development, which would likely be implemented in each function to help fasten the project development.
+
+\section{Design web service academic information system based multiplatform \cite{paper_10}}
+
+This paper proposed a system design that uses Web Services to make academic information available on both web and mobile platforms.
+
+The core of the design is a REST API that uses JSON to exchange data between the server and different types of devices. This approach was chosen because it allows a single database to support many different user interfaces while keeping all the information synchronized in real-time.
+
+The study found that using this web service architecture makes the system much easier to maintain and scale up because the "business logic" on the server is kept separate from how the app looks on the screen.
+
+For future work, the authors suggested adding stronger security protocols to the API and making the database faster so it can handle more students using the app at the same time.
+
+\section{Design and Implementation of a Digital Notice Board and Forum Discussion System \cite{paper_11}}
+
+This paper presents an educational website, equipped with two functions, digital notice board and discussion forum, which are developed to fulfill two goals that aim to improve university students' quality of life. The first goal is to create a centralized space for information dissemination, to ensure that any relevant parties can stay informed of any news or announcement. Second goal is to create an easy-to-access educational digital discussion platform in order to foster communication and discussions among students university staff. 
+
+Technically, the website was built using MERN stack (MongoDB, Express.js, React.js, and Node.js), which is a website development framework that is famous for its quick development time, ease of use, and its compatibility with JavaScript language, with the framework being complete on its own, covering front end, back end, API, and database, all within one framework.
+
+The research concludes that transitioning to a digital framework significantly improves user engagement and reduces the risk of miscommunication. For future development, the author suggests further optimizing the user experience and exploring additional features.
+
+As the paper provides information of how the website was planned and developed, including the technology stack and software development model used during the planning phase, such information will be used as a suggestion to our project planning, as the paper has proven itself to be successful, we hope that some part of the paper's strategy in website development could be implemented with our project as well.
+
+\section{Course Selling Website Using MERN Stack \cite{paper_12}}
+
+This paper presents an educational and commercial website that lets university teacher to create, manage, and sell their courses online, intended to be a platform that improves the education quality by narrowing the gap between student's demand for educational courses and teacher's courses supply under the platform equipped with firm security and secure user's privacy protection.
+
+With the website development heavily implements the MERN stack (MongoDB, Express.js, React.js, Node.js) which is a website development framework that is known for its quick development time, ease of use, and its high compatibility with JavaScript language. Additionally, the website also implements the REST API to obtain website's fast response time, and the capability to handle a large number of users and website's course data without being slowed down.
+
+The study found that this architecture makes the platform very flexible, allowing for features like real-time chat and secure payments to be added easily. By keeping the "business side" of the website separate from the "user side," the system is easier to update as more students join.
+
+For future work, the author suggests adding mobile options for the website, AI assistance to help answer student's questions, and digital certificate to serve as a proof when students finish their courses.
+
+With the paper's outlined website architecture and REST API implementation and its prove of effectiveness, such approach to educational website development can be expected to be implemented with our project.
+
+\section{CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}
+
+This paper introduces CourseViewer, a prototype that transforms traditional, text-heavy transcripts into interactive visual maps to help students plan their academic paths. This approach is highly relevant for an academic planner because it replaces manual checking with a dynamic system that shows how different courses are connected.
+
+The most useful feature for a modern planner is the graph-based visualization. By representing courses as "nodes" and prerequisites as directed arrows, the system makes it easy to see which classes "unlock" future subjects. This technical design helps prevent enrollment errors by clearly showing if a student has met the necessary requirements before they try to add a class.
+
+Technically, the tool uses the Java language and the Prefuse visualization toolkit to automatically handle the map layout so the user doesn't have to organize it manually. It also uses color-coding—such as green for completed and red for required—which provides an immediate visual status of a student's progress toward graduation.
+
+The study found that these visual maps allow students to identify their remaining credits much faster and more accurately than reading a paper transcript. For future work, the authors suggested adding a "what-if" feature to simulate different majors and integrating the tool directly into online registration systems.
+
+
+\section{The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite{paper_13}}
+
+This paper treats a university curriculum as a "complex system" that can be mapped using network science to reveal the hidden connections between courses. This is directly applicable to the project’s goal of automating 4-year academic planning for major and general education courses, which currently must be done manually.
+
+The study uses a Directed Acyclic Graph (DAG) where courses are "nodes" and prerequisites are "links". A key technical detail is the identification of "hubs" (courses that unlock many others) and "bridges" (links between different course groups). Implementing this logic allows the interactive planner to visually flag "bottleneck" courses, helping students avoid choices that could delay their graduation by a year.
+
+Technically, the research utilized NetworkX and Gephi to analyze network density and "betweenness centrality". In the project, these metrics can be used to calculate the "long-term impact" of taking a specific class, providing an automated "roadmap" that ensures all prerequisite constraints are met at a glance.
+
+
+\section{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
+This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
+
+A hyper-heuristic algorithm (GA\_RG\_HH) was developed, combining Genetic Algorithms (GA) with greedy strategies to optimize scheduling efficiency.
+
+Performance was evaluated using real-world datasets, measuring the reduction of soft constraint violations and the efficiency of resource allocation.
+
+The experiment indicated that the proposed GA\_RG\_HH performs better than traditional algorithms like Tabu Search and Particle Swarm Optimization. This is attributed to the algorithm's ability to balance exploration and exploitation through a pre-check strategy and dynamic operator sequences.
+
+Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
+
+\section{A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite{paper_14}}
+
+This paper reviews the best ways to design and use student feedback (course evaluations) to help teachers improve their classes, specifically in medical and pharmacy programs.
+
+The core of the study suggests that a good evaluation system should be carefully planned to be fair and useful. The authors recommend using standardized online forms with about 10 to 30 questions that are easy for students to understand. This approach was chosen because online tools are faster, save paper, and make it easier for teachers to see their results quickly. To keep students from getting "survey fatigue," the study suggests giving them dedicated time during class to finish the evaluations.
+
+The research found that these evaluations are most effective when they focus on "scholarly teaching"—meaning the questions ask about clear goals, good preparation, and how well the teacher presents the material. The study also notes that while online evaluations might have fewer students responding than paper ones, the actual scores and feedback are usually the same.
+
+For future improvements, the authors suggest that schools should use random sampling to get reliable feedback without asking every student every time, create a clear plan for who gets to see the results and how they will be used to help teachers grow, train mentors to help faculty members understand their feedback and make positive changes to their courses.
+
+NOT SURE WHETHER TO INCLUDE OR NOT
