@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.18)  5 MAR 2026 15:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.18)  9 MAR 2026 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,7 +1037,7 @@ ble
 CHAPTER 2.
 [5
 
-] [6] [7] [8]) (chapter3.tex [9] [10]
+] [6] [7] [8] [9]) (chapter3.tex [10]
 CHAPTER 3.
 File: ./figures/chap1/paragraph.png Graphic file (type bmp)
 <./figures/chap1/paragraph.png>

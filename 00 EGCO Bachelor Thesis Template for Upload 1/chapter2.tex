@@ -34,6 +34,27 @@ For future work, the author suggests adding mobile options for the website, AI a
 
 With the paper's outlined website architecture and REST API implementation and its prove of effectiveness, such approach to educational website development can be expected to be implemented with our project.
 
+\section{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
+This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
+
+A hyper-heuristic algorithm (GA\_RG\_HH) was developed, combining Genetic Algorithms (GA) with greedy strategies to optimize scheduling efficiency.
+
+Performance was evaluated using real-world datasets, measuring the reduction of soft constraint violations and the efficiency of resource allocation.
+
+The experiment indicated that the proposed GA\_RG\_HH performs better than traditional algorithms like Tabu Search and Particle Swarm Optimization. This is attributed to the algorithm's ability to balance exploration and exploitation through a pre-check strategy and dynamic operator sequences.
+
+Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
+
+\section{A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite{paper_14}}
+
+This paper reviews the best ways to design and use student feedback (course evaluations) to help teachers improve their classes, specifically in medical and pharmacy programs.
+
+The core of the study suggests that a good evaluation should be carefully planned to be fair and useful. The author recommended using a standardized online forms with about 10 to 30 questions that are easy to understand for students. The reason why the forms are suggested to be in online format is because it allows the results to be collected and processed more efficiently compared to the traditional paper format. The research also recommended that there should be a formal scheduled time for students to complete the survey, for example, during class period, to prevent "survey fatigue".
+
+Additionally, the research found that the evaluations are most effective when they focus on the "teaching aspect" of the courses, for example, the goal of the course, and how well the the teachers prepare and present their materials. The study also pointed out that although online evaluations receive less response than paper evaluations, the quality of the results is usually the same.
+
+For future work, the author suggests using random samples with the survey, since the traditional method of collecting course evaluations is to distribute the survey to every students, but by using random sampling (selecting a group of students in random), it can reduce the time taken to collect the evaluations while maintaining the quality of the results. The teacher's access to the evaluation data is also advised to be limited for better efficiency in data distribution. 
+
 \section{CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}
 
 This paper introduces CourseViewer, a prototype that transforms traditional, text-heavy transcripts into interactive visual maps to help students plan their academic paths. This approach is highly relevant for an academic planner because it replaces manual checking with a dynamic system that shows how different courses are connected.
@@ -52,27 +73,3 @@ This paper treats a university curriculum as a "complex system" that can be mapp
 The study uses a Directed Acyclic Graph (DAG) where courses are "nodes" and prerequisites are "links". A key technical detail is the identification of "hubs" (courses that unlock many others) and "bridges" (links between different course groups). Implementing this logic allows the interactive planner to visually flag "bottleneck" courses, helping students avoid choices that could delay their graduation by a year.
 
 Technically, the research utilized NetworkX and Gephi to analyze network density and "betweenness centrality". In the project, these metrics can be used to calculate the "long-term impact" of taking a specific class, providing an automated "roadmap" that ensures all prerequisite constraints are met at a glance.
-
-
-\section{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
-This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
-
-A hyper-heuristic algorithm (GA\_RG\_HH) was developed, combining Genetic Algorithms (GA) with greedy strategies to optimize scheduling efficiency.
-
-Performance was evaluated using real-world datasets, measuring the reduction of soft constraint violations and the efficiency of resource allocation.
-
-The experiment indicated that the proposed GA\_RG\_HH performs better than traditional algorithms like Tabu Search and Particle Swarm Optimization. This is attributed to the algorithm's ability to balance exploration and exploitation through a pre-check strategy and dynamic operator sequences.
-
-Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
-
-\section{A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite{paper_14}}
-
-This paper reviews the best ways to design and use student feedback (course evaluations) to help teachers improve their classes, specifically in medical and pharmacy programs.
-
-The core of the study suggests that a good evaluation system should be carefully planned to be fair and useful. The authors recommend using standardized online forms with about 10 to 30 questions that are easy for students to understand. This approach was chosen because online tools are faster, save paper, and make it easier for teachers to see their results quickly. To keep students from getting "survey fatigue," the study suggests giving them dedicated time during class to finish the evaluations.
-
-The research found that these evaluations are most effective when they focus on "scholarly teaching"—meaning the questions ask about clear goals, good preparation, and how well the teacher presents the material. The study also notes that while online evaluations might have fewer students responding than paper ones, the actual scores and feedback are usually the same.
-
-For future improvements, the authors suggest that schools should use random sampling to get reliable feedback without asking every student every time, create a clear plan for who gets to see the results and how they will be used to help teachers grow, train mentors to help faculty members understand their feedback and make positive changes to their courses.
-
-NOT SURE WHETHER TO INCLUDE OR NOT
