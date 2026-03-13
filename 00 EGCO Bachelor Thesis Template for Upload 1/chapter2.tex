@@ -1,5 +1,23 @@
 \chapter{LITERATURE REVIEW}
 	
+\newcommand{\funcgroup}[1]{%
+	\vspace{\baselineskip}%
+	\noindent{\bfseries\fontsize{12}{14.4}\selectfont #1}%
+	\vspace{0.1pt}\par%
+}
+
+\begin{comment}
+%for counter
+\newcounter{funcgroupcounter}[section]  % resets to 0 each new \section
+\newcommand{\funcgroup}[1]{%
+	\refstepcounter{funcgroupcounter}%
+	\vspace{\baselineskip}%
+	\noindent{\bfseries\fontsize{12}{14.4}\selectfont
+		\thesection.\arabic{funcgroupcounter}\quad #1}%
+	\vspace{0.1pt}\par%
+}
+\end{comment}
+	
 This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development, which would likely be implemented in each function to help fasten the project development.
 
 \section{technological stack and system architecture}
@@ -35,7 +53,7 @@ For future work, the author suggests adding mobile options for the website, AI a
 
 \section{Functions}
 
-\paragraph{Schedule matcher}
+\funcgroup{Schedule matcher}
 
 \subsection{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
 This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
@@ -48,7 +66,7 @@ The experiment indicated that the proposed GA\_RG\_HH performs better than tradi
 
 Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
 
-\paragraph{Course rater}
+\funcgroup{Course rater}
 
 \subsection{A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite{paper_14}}
 
@@ -60,7 +78,7 @@ Additionally, the research found that the evaluations are most effective when th
 
 For future work, the author suggests using random samples with the survey, since the traditional method of collecting course evaluations is to distribute the survey to every students, but by using random sampling (selecting a group of students in random), it can reduce the time taken to collect the evaluations while maintaining the quality of the results. The teacher's access to the evaluation data is also advised to be limited for better efficiency in data distribution. 
 
-\paragraph{Super planner}
+\funcgroup{Super planner}
 
 \subsection{CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}
 
