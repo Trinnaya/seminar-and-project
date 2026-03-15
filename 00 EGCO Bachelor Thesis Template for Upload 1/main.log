@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.18)  13 MAR 2026 15:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.18)  15 MAR 2026 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1029,19 +1029,19 @@ CHAPTER 1.
 
 LaTeX Font Warning: Font shape `TU/TimesNewRoman(1)/m/n' in size <10> not avail
 able
-(Font)              size <12> substituted on input line 54.
+(Font)              size <12> substituted on input line 68.
 
 
 LaTeX Font Warning: Font shape `TU/TimesNewRoman(1)/m/n' in size <5> not availa
 ble
-(Font)              size <12> substituted on input line 88.
+(Font)              size <12> substituted on input line 102.
 
 ) (chapter2.tex [4]
 CHAPTER 2.
 Excluding 'comment' comment. [5
 
 ] [6]
-Underfull \hbox (badness 2753) in paragraph at lines 59--60
+Underfull \hbox (badness 2753) in paragraph at lines 60--61
 []\TU/TimesNewRoman(0)/m/n/12 This study addresses the University Course Schedu
 ling Problem
  []
@@ -1077,12 +1077,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 13263 strings out of 402987
- 270969 string characters out of 5448317
- 873705 words of memory out of 5000000
- 41737 multiletter control sequences out of 15000+600000
+ 13264 strings out of 402987
+ 270997 string characters out of 5448317
+ 876705 words of memory out of 5000000
+ 41738 multiletter control sequences out of 15000+600000
  633752 words of font info for 101 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,14n,107p,1633b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 88i,14n,107p,1393b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (29 pages).

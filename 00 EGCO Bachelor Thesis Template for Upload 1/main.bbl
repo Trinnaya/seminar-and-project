@@ -29,17 +29,18 @@ M.~R. de~Oliveira, P.~J.~C. de~Mendonc{\c{a}}, A.~F.~G. Leardine, V.~P.
   School of Technology, University of Campinas}, Limeira, Brazil, 2018.
 \newblock Email: celmar@ft.unicamp.br.
 
+\bibitem[Fergan and Tashu(2023)]{paper_7}
+E.~Fergan and T.~M. Tashu.
+\newblock Course review sentiment analysis: A comparative study of machine
+  learning and deep learning methods.
+\newblock pages 1--7, 2023.
+\newblock \doi{10.1109/BESC59560.2023.10386515}.
+
 \bibitem[Inc.(n.d.)]{stellic}
 S.~Inc.
 \newblock Stellic: Degree management and student success platform.
 \newblock https://www.stellic.com/, n.d.
 \newblock Accessed: 2025-02-11.
-
-\bibitem[Jiang and Mike(2005)]{paper_9}
-H.~Jiang and B.~Mike.
-\newblock Preference-based group scheduling.
-\newblock 3585:\penalty0 990--993, 09 2005.
-\newblock \doi{10.1007/11555261\_87}.
 
 \bibitem[L.P.(n.d.)]{degreeworks}
 E.~C. L.P.

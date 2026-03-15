@@ -1,5 +1,6 @@
 \chapter{LITERATURE REVIEW}
 	
+	
 \newcommand{\funcgroup}[1]{%
 	\vspace{\baselineskip}%
 	\noindent{\bfseries\fontsize{12}{14.4}\selectfont #1}%
@@ -18,7 +19,7 @@
 }
 \end{comment}
 	
-This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development, which would likely be implemented in each function to help fasten the project development.
+This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development. For this part, it will be divided into 3 sub-parts for 3 functions, with each part containing reviewed literature that are related to the function of that part.
 
 \section{technological stack and system architecture}
 
@@ -99,8 +100,14 @@ The study uses a Directed Acyclic Graph (DAG) where courses are "nodes" and prer
 
 Technically, the research utilized NetworkX and Gephi to analyze network density and "betweenness centrality". In the project, these metrics can be used to calculate the "long-term impact" of taking a specific class, providing an automated "roadmap" that ensures all prerequisite constraints are met at a glance.
 
-\section{CONTRIBUTION TEMPORARY}
+\section{Contribution}
 
-With the paper's outlined website architecture and REST API implementation and its prove of effectiveness, such approach to educational website development can be expected to be implemented with our project. COURSE SELLING WEBSITE USING MERN STACK
+The literature reviewed in this chapter provides both technical and conceptual foundations that directly inform the design and development of EGCEye.
 
-As the paper provides information of how the website was planned and developed, including the technology stack and software development model used during the planning phase, such information will be used as a suggestion to our project planning, as the paper has proven itself to be successful, we hope that some part of the paper's strategy in website development could be implemented with our project as well. DIGITAL NOTICE BOARD
+For the technology stack, the MERN-based implementations demonstrated in \cite{paper_11} and \cite{paper_12} confirm that MongoDB, Express.js, React, and Node.js form a proven and cohesive stack for educational web platforms at a similar scope to EGCEye. The REST API design principles outlined in \cite{paper_10} further reinforce that a single API layer can serve multiple interface types while maintaining data consistency — an architecture that EGCEye directly adopts.
+
+For the Schedule Matcher, the Master Busy Map logic \cite{paper_7} provides the core algorithm for deriving common free windows across multiple students' schedules, while TableExtractNet \cite{ngubane2024tableextractnet} informs the image-based table extraction approach used to convert schedule screenshots into structured data.
+
+For the Rate-My-Course function, \cite{paper_14} provides evidence-based guidance on feedback system design, supporting EGCEye's decision to keep star rating as the only required field, list courses separately by professor where multiple sections exist, and present aggregated results in a structured and accessible format.
+
+For the Super Planner, CourseViewer \cite{paper_15} serves as the direct precedent for the node-and-arrow graph representation and the color-coding of course completion states. The curriculum prerequisite network study \cite{paper_13} further supports the use of graph-based visualization over text-based planning tools, and informs the planner's bottleneck warning system that flags courses a student should prioritize based on their year level.
