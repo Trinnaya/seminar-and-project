@@ -14,7 +14,7 @@
 
 
 
-\section{Objective}
+\section{Objectives}
 \begin{itemize}
 	\item To analyze the user behaviors regarding schedule sharing, existing course review , and course planning system
 	\item To design a web interface and system architecture that integrates:
@@ -34,29 +34,54 @@
 \end{itemize}
 
 \section{Scope}
-\begin{enumerate}
-    \item The Optical Character Recognition will be used to read any text labels of date and time from the class schedule screen capture.
+\begin{itemize}
+	\item Platform Availability: The system will be developed as a web application, available specifically for EGCI students.
+	\item Technology Stack
+	\begin{enumerate}[label=\alph*.]
+	\item Full-Stack Framework: MERN, MongoDB for database, Express.js as a backend framework, React as a frontend library, and Node.js a runtime environment to run JavaScript code
+	\item Image Processing Engine: A JavaScript-based service utilizing Tesseract.js for optical character recognition and OpenCV.js for color segmentation and coordinate mapping in schedule extraction, integrated directly within the Node.js backend
+	\item Programming Languages: JavaScript (ES6+) for both web architecture and image data processing
+	\end{enumerate}
     
-    \item The coloured blobs will be detected by OpenCV. We will perform color segmentation to extract the class block, which will then be put in Master Busy Map to perform OR logic operation to find common free times among students.
-    
-    \item If no common available time is found for the entire group, the system will suggest available time slots for smaller subgroups by excluding one student at a time and identifying overlapping free periods among the remaining members
-    
-    \item Allows EGCI students to rate the any available General Education courses, major required course, and engineering core course offered by MUIC and EGCI faculty, as a score from 0 to 5 and allows users to leave a comment anonymously.
-    
-    \item List of courses available to rate will be initially created by us but users can also choose to add more choice of courses in case new courses are available.
-    \item Any available courses will also be separated by professors in case the course has more than one section, which are taught by different professors.
-    \item The function offers graphical interfaces for users to arrange the plan for their entire academic studies with the EGCI faculty, the computer engineering major required courses and engineering core courses will be in a form of a floating icons which users can drag and place them in a slot for each semester, with multiple semesters available. Each course that has prerequisite courses will have a line connecting to the prerequisite courses. There would also be an additional “suggestion” line, which connects between a course and other available courses which are suggested by the faculty to study first although the course is not connected by the prerequisite line. With the general education courses, I-design courses, and major electives courses, the website will allow users to specify what course they would take to complete the required credit of that category.
-    \item The courses that are not yet placed in the plan will also display a marker to suggest the users of their choice of course enrollment, for example, a second year course that has never been enrolled by the third year student will show a marker and a suggestion to the student that they should consider taking it as soon as possible.
-    
-\end{enumerate}
+\end{itemize}
+
+\section{Data restriction for each function}
+\begin{itemize}
+	\item Schedule matcher
+	\begin{enumerate}[label=\alph*.]
+		\item The system accepts image uploads (JPEG or PNG) of class schedules exported from Sky+  application.
+		\item Date and time labels are extracted from the schedule grid by the Optical Character Recognition via Tesseract.js.
+		\item Extracted schedule data is stored temporarily for the duration of the matching session, and is not retained after that.
+	\end{enumerate}
+	\item Rate-My-Course
+	\begin{enumerate}[label=\alph*.]
+		\item List of courses available to review covers Major Required Courses, Engineering Core Courses, and Computer Engineering Elective Courses offered in MUIC catalog 2022.
+		\item EGCI students are allowed to provide 0 to 5 star ratings, and  leave a comment whether anonymously or not.
+		\item Any available courses will also be separated by professors in case the course has more than one section, which are taught by different professors.
+		\item Users may submit courses additional to the initial setting.
+	\end{enumerate}
+	\item Super planner
+	\begin{enumerate}[label=\alph*.]
+		\item List of courses available for drag-and-drop includes MUIC General Education courses, Computer Engineering Major Required Courses, Engineering Core Courses, and Computer Engineering Elective Courses in the catalog.
+		\item This acts as a tool for visualization, not connected to MUIC official course enrollment.
+	\end{enumerate}
+	
+\end{itemize}
 
 \section{Expected Results}
 \begin{enumerate}
-	\item The proposed system is expected to achieve a user base of 50 or more.
-	\item The Rate-My-Course reaches the number of activities: 15 for adding star-rating, and 5 for leaving comments.
-	\item The Class Schedule Matcher targets a number of 15-20 screenshots uploaded to find common free times, with all being accurately matched.
-	\item The Super Planner aims to facilitate at least 5-10 unique student plans. 2-3 trimesters (slots) or more mapped out are required to be counted as one plan to preserve its long-term plan characteristic.
-	\item The project aims for an average User Experience (UX) rating of 4.0-4.5 out of 5 stars based on quality feedback collected from a random group of users.
+	\item A set of requirements as a foundation for the system
+	\item A user-centric interface design
+	\item Web Platform, the primary deliverable integrated with three core functions
+	\item Performance Evaluation based on following metrics:
+	\begin{itemize}
+		\item The proposed system is expected to achieve a user base of 50 or more.
+		\item The Rate-My-Course reaches the number for activities: 15 for adding star-rating, and 5 for leaving comments.
+		\item The Class Schedule Matcher targets a number of 15-20 screenshots uploaded to find common free times, with all being accurately matched.
+		\item The Super Planner aims to facilitate at least 5-10 unique student plans.
+		\item The project aims for an average User Experience (UX) rating of 4.0-4.5 out of 5 stars based on quality feedback collected from a random group of users.
+	\end{itemize}
+	
 	
 \end{enumerate}
 \section{Timeline}
