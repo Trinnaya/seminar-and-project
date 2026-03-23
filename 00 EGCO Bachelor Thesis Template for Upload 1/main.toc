@@ -6,13 +6,13 @@
 \contentsline {chapter}{ABSTRACT (THAI)}{iv}{}%
 \contentsline {chapter}{ABSTRACT (ENGLISH)}{v}{}%
 \contentsline {chapter}{CONTENTS}{vi}{}%
-\contentsline {chapter}{LIST OF TABLES}{viii}{}%
-\contentsline {chapter}{LIST OF FIGURES}{ix}{}%
+\contentsline {chapter}{LIST OF TABLES}{ix}{}%
+\contentsline {chapter}{LIST OF FIGURES}{x}{}%
 \contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{}%
 \contentsline {section}{\numberline {1.1}Background}{1}{}%
 \contentsline {section}{\numberline {1.2}Objectives}{2}{}%
 \contentsline {section}{\numberline {1.3}Scope}{3}{}%
-\contentsline {section}{\numberline {1.4}Data restriction for each function}{3}{}%
+\contentsline {section}{\numberline {1.4}Data restriction for each component}{3}{}%
 \contentsline {section}{\numberline {1.5}Expected Results}{4}{}%
 \contentsline {section}{\numberline {1.6}Timeline}{5}{}%
 \contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{6}{}%
@@ -27,16 +27,33 @@
 \contentsline {subsection}{\numberline {2.2.4}The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite {paper_13}}{10}{}%
 \contentsline {section}{\numberline {2.3}Contribution}{11}{}%
 \contentsline {chapter}{\numberline {3}METHODOLOGY}{12}{}%
-\contentsline {section}{\numberline {3.1}System Design}{12}{}%
-\contentsline {section}{\numberline {3.2}Data}{13}{}%
-\contentsline {section}{\numberline {3.3}Methods}{13}{}%
-\contentsline {section}{\numberline {3.4}Hyperparameter Configurations}{13}{}%
-\contentsline {section}{\numberline {3.5}Performace Evaluation}{13}{}%
-\contentsline {chapter}{\numberline {4}RESULT}{14}{}%
-\contentsline {section}{\numberline {4.1}Results}{14}{}%
-\contentsline {section}{\numberline {4.2}Discussions}{14}{}%
-\contentsline {chapter}{\numberline {5}Conclusion}{15}{}%
-\contentsline {section}{\numberline {5.1}Conclusion}{15}{}%
-\contentsline {section}{\numberline {5.2}Obstacles}{15}{}%
-\contentsline {section}{\numberline {5.3}Future Work}{15}{}%
-\contentsline {chapter}{REFERENCES}{16}{}%
+\contentsline {section}{\numberline {3.1}System Architecture}{12}{}%
+\contentsline {subsection}{\numberline {3.1.1}Presentation Layer (Frontend)}{12}{}%
+\contentsline {subsection}{\numberline {3.1.2}Application Layer (Backend)}{13}{}%
+\contentsline {subsection}{\numberline {3.1.3}Data Management}{15}{}%
+\contentsline {subsection}{\numberline {3.1.4}Overall Data Flow}{15}{}%
+\contentsline {section}{\numberline {3.2}Schedule Matcher Component}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Description}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Processing Pipeline}{17}{}%
+\contentsline {subsection}{\numberline {3.2.3}Frontend}{18}{}%
+\contentsline {subsection}{\numberline {3.2.4}Backend, API, and Database}{18}{}%
+\contentsline {section}{\numberline {3.3}Rate-My-Course Component}{19}{}%
+\contentsline {subsection}{\numberline {3.3.1}Description}{19}{}%
+\contentsline {subsection}{\numberline {3.3.2}Processing Pipeline}{21}{}%
+\contentsline {subsection}{\numberline {3.3.3}Frontend}{22}{}%
+\contentsline {subsection}{\numberline {3.3.4}Backend and API}{23}{}%
+\contentsline {subsection}{\numberline {3.3.5}Database Schema}{23}{}%
+\contentsline {section}{\numberline {3.4}Super Planner Component}{24}{}%
+\contentsline {subsection}{\numberline {3.4.1}Description}{24}{}%
+\contentsline {subsection}{\numberline {3.4.2}Processing Pipeline}{26}{}%
+\contentsline {subsection}{\numberline {3.4.3}Progress Markers}{27}{}%
+\contentsline {subsection}{\numberline {3.4.4}Frontend}{27}{}%
+\contentsline {subsection}{\numberline {3.4.5}Backend, API, and Database}{28}{}%
+\contentsline {chapter}{\numberline {4}RESULT}{29}{}%
+\contentsline {section}{\numberline {4.1}Results}{29}{}%
+\contentsline {section}{\numberline {4.2}Discussions}{29}{}%
+\contentsline {chapter}{\numberline {5}Conclusion}{30}{}%
+\contentsline {section}{\numberline {5.1}Conclusion}{30}{}%
+\contentsline {section}{\numberline {5.2}Obstacles}{30}{}%
+\contentsline {section}{\numberline {5.3}Future Work}{30}{}%
+\contentsline {chapter}{REFERENCES}{31}{}%
