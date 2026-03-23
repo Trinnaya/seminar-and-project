@@ -19,7 +19,7 @@
 }
 \end{comment}
 	
-This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development. For this part, it will be divided into 3 sub-parts for 3 functions, with each part containing reviewed literature that are related to the function of that part.
+This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main components development. For this part, it will be divided into 3 sub-parts for 3 components, with each part containing reviewed literature that are related to the component of that part.
 
 \section{technological stack and system architecture}
 
@@ -52,9 +52,9 @@ The study found that this architecture makes the platform very flexible, allowin
 For future work, the author suggests adding mobile options for the website, AI assistance to help answer student's questions, and digital certificate to serve as a proof when students finish their courses.
 
 
-\section{Functions}
+\section{Components}
 
-\funcgroup{Schedule matcher}
+\funcgroup{Schedule Matcher}
 
 \subsection{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
 This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
@@ -67,7 +67,7 @@ The experiment indicated that the proposed GA\_RG\_HH performs better than tradi
 
 Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
 
-\funcgroup{Course rater}
+\funcgroup{Course Rater}
 
 \subsection{A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite{paper_14}}
 
@@ -79,7 +79,7 @@ Additionally, the research found that the evaluations are most effective when th
 
 For future work, the author suggests using random samples with the survey, since the traditional method of collecting course evaluations is to distribute the survey to every students, but by using random sampling (selecting a group of students in random), it can reduce the time taken to collect the evaluations while maintaining the quality of the results. The teacher's access to the evaluation data is also advised to be limited for better efficiency in data distribution. 
 
-\funcgroup{Super planner}
+\funcgroup{Super Planner}
 
 \subsection{CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}
 
@@ -106,4 +106,9 @@ The literature reviewed in this chapter provides both technical and conceptual f
 
 With the three papers from technological stack section of this chapter, both \cite{paper_11} and \cite{paper_12} built their platforms using MongoDB, Express.js, React, and Node.js, and both worked well for educational use cases at a scale close to EGCEye. So it's fair to say the MERN stack is a solid, well-tested choice for this kind of project. And the REST API approach from \cite{paper_10} shows that one API layer can handle multiple platforms at the same time without things getting out of sync, which is exactly how EGCEye is set up too, so it is fair to say that the majority of the contributions of the three papers is they provide a proven-to-work examples of website development using MERN stack which serves as a suggestion of our website development planning.
 
+Schedule matcher still needs more simple paper
+
+Course Rater
+
+For the Super Planner, two papers from this section point to the same core idea: students understand their academic path better when they can see it visually rather than read it from a handbook. \cite{paper_15} shows that mapping courses as nodes with prerequisite arrows and color coded status helps students track their progress faster and with fewer mistakes, which is exactly how the Super Planner's drag and drop canvas is designed to work. And \cite{paper_13} adds to this by showing that some courses act as bottlenecks because they unlock many others, so knowing which ones those are helps students avoid choices that slow down their graduation. Both of these ideas are built into how the Super Planner connects and displays course bubbles.
 
