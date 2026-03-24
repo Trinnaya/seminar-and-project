@@ -1,6 +1,6 @@
 \chapter{LITERATURE REVIEW}
-	
-	
+
+
 \newcommand{\funcgroup}[1]{%
 	\vspace{\baselineskip}%
 	\noindent{\bfseries\fontsize{12}{14.4}\selectfont #1}%
@@ -8,20 +8,20 @@
 }
 
 \begin{comment}
-%for counter
-\newcounter{funcgroupcounter}[section]  % resets to 0 each new \section
-\newcommand{\funcgroup}[1]{%
-	\refstepcounter{funcgroupcounter}%
-	\vspace{\baselineskip}%
-	\noindent{\bfseries\fontsize{12}{14.4}\selectfont
-		\thesection.\arabic{funcgroupcounter}\quad #1}%
-	\vspace{0.1pt}\par%
-}
+	%for counter
+	\newcounter{funcgroupcounter}[section]  % resets to 0 each new \section
+	\newcommand{\funcgroup}[1]{%
+		\refstepcounter{funcgroupcounter}%
+		\vspace{\baselineskip}%
+		\noindent{\bfseries\fontsize{12}{14.4}\selectfont
+			\thesection.\arabic{funcgroupcounter}\quad #1}%
+		\vspace{0.1pt}\par%
+	}
 \end{comment}
-	
+
 This chapter discusses the published academic papers used to support our project. There are two main parts: The first part discussed the technology stack, website development framework, and website development planning that has been implemented and met with success. Such technology stack and planning would then be used as a guideline to our project development. The second part explores any methods or algorithms that could be adapted and used for the project’s main functions development. For this part, it will be divided into 3 sub-parts for 3 functions, with each part containing reviewed literature that are related to the function of that part.
 
-\section{technological stack and system architecture}
+\section{Technological Stack and System Architecture}
 
 \subsection{Design web service academic information system based multiplatform \cite{paper_10}}
 
@@ -32,6 +32,7 @@ The core of the design is a REST API that uses JSON to exchange data between the
 The study found that using this web service architecture makes the system much easier to maintain and scale up because the "business logic" on the server is kept separate from how the app looks on the screen.
 
 For future work, the authors suggested adding stronger security protocols to the API and making the database faster so it can handle more students using the app at the same time.
+
 
 \subsection{Design and Implementation of a Digital Notice Board and Forum Discussion System \cite{paper_11}}
 
@@ -56,16 +57,58 @@ For future work, the author suggests adding mobile options for the website, AI a
 
 \funcgroup{Schedule matcher}
 
+\subsection{OCR with Tesseract, Amazon Textract, and Google Document AI: a benchmarking experiment \cite{paper_16}}
+This study addresses the variability in OCR software accuracy by conducting a benchmarking experiment comparing the performance of Tesseract, Amazon Textract, and Google Document AI on images of English and Arabic text. 
+
+English-language book scans (n=322) and Arabic-language article scans (n=100) were replicated 43 times with different types of artificial noise for a corpus of 18,568 documents, generating 51,304 process requests. 
+
+Performance was evaluated by measuring character and word error rates across document types and noise conditions, comparing all three engines under identical test materials and standardised noise injection.
+
+The study demonstrated that Document AI and Textract performed significantly better than Tesseract, particularly on noisy documents, while Tesseract remains a cost-effective option but struggles with complex layouts. 
+
+Future work includes testing additional OCR processors such as Adobe PDF Services and ABBYY Cloud OCR using the same benchmark procedure, and extending the dataset to more language families beyond English and Arabic.
+
+\subsection{Printed document layout analysis and optical character recognition system based on deep learning \cite{paper_17}}
+This study addresses the challenge of automated document understanding by proposing a layout analysis and text recognition system for printed documents based on deep learning. 
+
+Scanned documents or image files are processed using a layout analysis algorithm based on YOLOv4 and YOLOv8 deep learning to identify the positions of titles, text paragraphs, tables, and images within the document, after which each category undergoes specific character segmentation processing before content is recognised using a CNN-based text recognition algorithm. 
+
+Performance was evaluated on printed document datasets measuring layout detection accuracy and character recognition rates across different document structures and categories.
+
+The proposed system demonstrates strong performance on structured printed documents by combining layout detection and text recognition into an end-to-end pipeline, with the layout analysis stage accurately separating structural elements before passing them to the recognition stage. 
+
+Future work includes extending the system to handle handwritten documents and more complex multi-column layouts, as well as improving robustness to degraded or low-resolution scans.
+
+\subsection{Color sensors and their applications based on real-time color image segmentation for cyber physical systems \cite{paper_18}}
+This study addresses the challenge of real-time color detection and segmentation in cyber physical systems by proposing a novel real-time color image segmentation method based on color similarity in RGB color space. 
+
+The proposed method uses OpenCV's CVCAM technology to capture and process video streams, determining the dominant color first based on RGB color and luminance information, then calculating color similarity using a proposed color component method to create a color-class map. 
+
+Performance was evaluated by applying the segmentation algorithm to real-time video streams and measuring the accuracy of color region detection under varying lighting and background conditions.
+
+The experiment demonstrated that the proposed RGB-based segmentation method can reliably identify and isolate colored regions in real time, with results showing precise segmentation that handles noise and lighting variation effectively. 
+
+Future work includes extending the method to more complex multi-object scenes and integrating adaptive color correction mechanisms to further improve robustness under extreme lighting conditions.
+
 \subsection{A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite{paper_3}}
+
 This study addresses the University Course Scheduling Problem (UCSP) by proposing a novel model that balances resources like classrooms and teachers while satisfying complex constraints.
 
 A hyper-heuristic algorithm (GA\_RG\_HH) was developed, combining Genetic Algorithms (GA) with greedy strategies to optimize scheduling efficiency.
+Performance was evaluated using real-world datasets, measuring the re- duction of soft constraint violations and the efficiency of resource allocation.
 
-Performance was evaluated using real-world datasets, measuring the reduction of soft constraint violations and the efficiency of resource allocation.
-
-The experiment indicated that the proposed GA\_RG\_HH performs better than traditional algorithms like Tabu Search and Particle Swarm Optimization. This is attributed to the algorithm's ability to balance exploration and exploitation through a pre-check strategy and dynamic operator sequences.
-
+The experiment indicated that the proposed GA\_RG\_HH performs bet- ter than traditional algorithms like Tabu Search and Particle Swarm Optimization. This is attributed to the algorithm's ability to balance exploration and exploitation through a pre-check strategy and dynamic operator sequences.
 Future work includes further optimization of the algorithm for even larger-scale institutional data and the inclusion of more diverse constraint parameters.
+
+\subsection{Algorithm Design \cite{kleinberg2005algorithm}}
+This chapter addresses the Interval Scheduling Problem, which asks how to select the maximum number of non-conflicting tasks from a set of requests, each defined by a start time and a finish time, such that no two selected tasks overlap in time.
+
+A greedy algorithm was proposed, selecting tasks by earliest finish time at each step — that is, always choosing the next available task that ends the soonest — and proving that this simple strategy consistently produces an optimal solution without requiring exhaustive search.
+Performance was analyzed theoretically using an exchange argument, demonstrating that the greedy solution is always at least as good as any other feasible selection, and the algorithm was shown to run in O(n log n) time after sorting tasks by finish time.
+
+The result established that the earliest-finish-time greedy strategy is provably optimal for the basic interval scheduling problem, outperforming naive approaches such as selecting by shortest duration or earliest start time, which can both produce suboptimal results.
+
+The chapter further extends the framework to related problems including Interval Partitioning, which finds the minimum number of resources needed to schedule all tasks without conflict, and Scheduling to Minimize Lateness, laying groundwork for more complex scheduling variants in future study.
 
 \funcgroup{Course rater}
 
@@ -98,7 +141,7 @@ This paper treats a university curriculum as a "complex system" that can be mapp
 
 The study uses a Directed Acyclic Graph (DAG) where courses are "nodes" and prerequisites are "links". A key technical detail is the identification of "hubs" (courses that unlock many others) and "bridges" (links between different course groups). Implementing this logic allows the interactive planner to visually flag "bottleneck" courses, helping students avoid choices that could delay their graduation by a year.
 
-Technically, the research utilized NetworkX and Gephi to analyze network density and "betweenness centrality". In the project, these metrics can be used to calculate the "long-term impact" of taking a specific class, providing an automated "roadmap" that ensures all prerequisite constraints are met at a glance.
+Technically, the research utilized NetworkX and Gephi to analyze network density and "betweenness centrality". 
 
 \section{Contribution}
 
@@ -106,7 +149,7 @@ The literature reviewed in this chapter provides both technical and conceptual f
 
 With the three papers from technological stack section of this chapter, both \cite{paper_11} and \cite{paper_12} built their platforms using MongoDB, Express.js, React, and Node.js, and both worked well for educational use cases at a scale close to EGCEye. So it's fair to say the MERN stack is a solid, well-tested choice for this kind of project. And the REST API approach from \cite{paper_10} shows that one API layer can handle multiple platforms at the same time without things getting out of sync, which is exactly how EGCEye is set up too, so it is fair to say that the majority of the contributions of the three papers is they provide a proven-to-work examples of website development using MERN stack which serves as a suggestion of our website development planning.
 
-For the Schedule Matcher, the Master Busy Map logic \cite{paper_7} provides the core algorithm for deriving common free windows across multiple students' schedules, while TableExtractNet \cite{ngubane2024tableextractnet} informs the image-based table extraction approach used to convert schedule screenshots into structured data.
+For the Schedule Matcher, Hegghammer \cite{paper_16} provides peer-reviewed justification for the selection of Tesseract as the OCR engine by benchmarking it against commercial alternatives, confirming it as a cost-effective choice for clean, structured document inputs such as Sky+ schedule screenshots. Li et al. \cite{paper_17} further supports the two-stage pipeline design of first detecting the schedule grid layout before applying OCR, validating that separating layout detection from text recognition improves overall accuracy. Xiong et al. \cite{paper_18} establishes the theoretical basis for the color blob detection step, demonstrating that OpenCV-based RGB color segmentation reliably isolates colored regions against high-contrast backgrounds. Finally, Kleinberg and Tardos \cite{kleinberg2005algorithm} provide the formal interval scheduling theory that underpins both the busy map OR logic and the subgroup fallback algorithm.
 
 For the Rate-My-Course function, \cite{paper_14} provides evidence-based guidance on feedback system design, supporting EGCEye's decision to keep star rating as the only required field, list courses separately by professor where multiple sections exist, and present aggregated results in a structured and accessible format.
 

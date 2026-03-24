@@ -14,46 +14,50 @@
 \contentsline {section}{\numberline {1.3}Scope}{3}{}%
 \contentsline {section}{\numberline {1.4}Data restriction for each component}{3}{}%
 \contentsline {section}{\numberline {1.5}Expected Results}{4}{}%
-\contentsline {section}{\numberline {1.6}Timeline}{5}{}%
-\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{6}{}%
-\contentsline {section}{\numberline {2.1}technological stack and system architecture}{6}{}%
-\contentsline {subsection}{\numberline {2.1.1}Design web service academic information system based multiplatform \cite {paper_10}}{6}{}%
-\contentsline {subsection}{\numberline {2.1.2}Design and Implementation of a Digital Notice Board and Forum Discussion System \cite {paper_11}}{7}{}%
-\contentsline {subsection}{\numberline {2.1.3}Course Selling Website Using MERN Stack \cite {paper_12}}{7}{}%
-\contentsline {section}{\numberline {2.2}Functions}{8}{}%
-\contentsline {subsection}{\numberline {2.2.1}A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite {paper_3}}{8}{}%
-\contentsline {subsection}{\numberline {2.2.2}A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite {paper_14}}{9}{}%
-\contentsline {subsection}{\numberline {2.2.3}CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}{9}{}%
-\contentsline {subsection}{\numberline {2.2.4}The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite {paper_13}}{10}{}%
-\contentsline {section}{\numberline {2.3}Contribution}{11}{}%
-\contentsline {chapter}{\numberline {3}METHODOLOGY}{12}{}%
-\contentsline {section}{\numberline {3.1}System Architecture}{12}{}%
-\contentsline {subsection}{\numberline {3.1.1}Presentation Layer (Frontend)}{12}{}%
-\contentsline {subsection}{\numberline {3.1.2}Application Layer (Backend)}{13}{}%
-\contentsline {subsection}{\numberline {3.1.3}Data Management}{15}{}%
-\contentsline {subsection}{\numberline {3.1.4}Overall Data Flow}{15}{}%
-\contentsline {section}{\numberline {3.2}Schedule Matcher Component}{15}{}%
-\contentsline {subsection}{\numberline {3.2.1}Description}{15}{}%
-\contentsline {subsection}{\numberline {3.2.2}Processing Pipeline}{17}{}%
-\contentsline {subsection}{\numberline {3.2.3}Frontend}{18}{}%
-\contentsline {subsection}{\numberline {3.2.4}Backend, API, and Database}{18}{}%
-\contentsline {section}{\numberline {3.3}Rate-My-Course Component}{19}{}%
-\contentsline {subsection}{\numberline {3.3.1}Description}{19}{}%
-\contentsline {subsection}{\numberline {3.3.2}Processing Pipeline}{21}{}%
-\contentsline {subsection}{\numberline {3.3.3}Frontend}{22}{}%
-\contentsline {subsection}{\numberline {3.3.4}Backend and API}{23}{}%
-\contentsline {subsection}{\numberline {3.3.5}Database Schema}{23}{}%
-\contentsline {section}{\numberline {3.4}Super Planner Component}{24}{}%
-\contentsline {subsection}{\numberline {3.4.1}Description}{24}{}%
-\contentsline {subsection}{\numberline {3.4.2}Processing Pipeline}{26}{}%
-\contentsline {subsection}{\numberline {3.4.3}Progress Markers}{27}{}%
-\contentsline {subsection}{\numberline {3.4.4}Frontend}{27}{}%
-\contentsline {subsection}{\numberline {3.4.5}Backend, API, and Database}{28}{}%
-\contentsline {chapter}{\numberline {4}RESULT}{29}{}%
-\contentsline {section}{\numberline {4.1}Results}{29}{}%
-\contentsline {section}{\numberline {4.2}Discussions}{29}{}%
-\contentsline {chapter}{\numberline {5}Conclusion}{30}{}%
-\contentsline {section}{\numberline {5.1}Conclusion}{30}{}%
-\contentsline {section}{\numberline {5.2}Obstacles}{30}{}%
-\contentsline {section}{\numberline {5.3}Future Work}{30}{}%
-\contentsline {chapter}{REFERENCES}{31}{}%
+\contentsline {section}{\numberline {1.6}Timeline}{4}{}%
+\contentsline {chapter}{\numberline {2}LITERATURE REVIEW}{5}{}%
+\contentsline {section}{\numberline {2.1}Technological Stack and System Architecture}{5}{}%
+\contentsline {subsection}{\numberline {2.1.1}Design web service academic information system based multiplatform \cite {paper_10}}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}Design and Implementation of a Digital Notice Board and Forum Discussion System \cite {paper_11}}{6}{}%
+\contentsline {subsection}{\numberline {2.1.3}Course Selling Website Using MERN Stack \cite {paper_12}}{6}{}%
+\contentsline {section}{\numberline {2.2}Functions}{7}{}%
+\contentsline {subsection}{\numberline {2.2.1}OCR with Tesseract, Amazon Textract, and Google Document AI: a benchmarking experiment \cite {paper_16}}{7}{}%
+\contentsline {subsection}{\numberline {2.2.2}Printed document layout analysis and optical character recognition system based on deep learning \cite {paper_17}}{8}{}%
+\contentsline {subsection}{\numberline {2.2.3}Color sensors and their applications based on real-time color image segmentation for cyber physical systems \cite {paper_18}}{8}{}%
+\contentsline {subsection}{\numberline {2.2.4}A hyper-heuristic algorithm based on genetic and greedy strategy for university course scheduling problem \cite {paper_3}}{9}{}%
+\contentsline {subsection}{\numberline {2.2.5}Algorithm Design \cite {kleinberg2005algorithm}}{9}{}%
+\contentsline {subsection}{\numberline {2.2.6}A Review of Strategies for Designing, Administering, and Using Student Ratings of Instruction \cite {paper_14}}{10}{}%
+\contentsline {subsection}{\numberline {2.2.7}CourseViewer a prototype for visualizing undergraduate courses and student transcripts \cite {paper_15}}{11}{}%
+\contentsline {subsection}{\numberline {2.2.8}The curriculum prerequisite network: a tool for visualizing and analyzing academic curricula \cite {paper_13}}{12}{}%
+\contentsline {section}{\numberline {2.3}Contribution}{12}{}%
+\contentsline {chapter}{\numberline {3}METHODOLOGY}{14}{}%
+\contentsline {section}{\numberline {3.1}System Architecture}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}Frontend Layer}{14}{}%
+\contentsline {subsection}{\numberline {3.1.2}Backend Layer}{15}{}%
+\contentsline {subsection}{\numberline {3.1.3}Data Management}{17}{}%
+\contentsline {subsection}{\numberline {3.1.4}Overall Data Flow}{17}{}%
+\contentsline {section}{\numberline {3.2}Schedule Matcher Component}{17}{}%
+\contentsline {subsection}{\numberline {3.2.1}Description}{17}{}%
+\contentsline {subsection}{\numberline {3.2.2}Processing Pipeline}{19}{}%
+\contentsline {subsection}{\numberline {3.2.3}Frontend}{20}{}%
+\contentsline {subsection}{\numberline {3.2.4}Backend, API, and Database}{20}{}%
+\contentsline {section}{\numberline {3.3}Rate-My-Course Component}{21}{}%
+\contentsline {subsection}{\numberline {3.3.1}Description}{21}{}%
+\contentsline {subsection}{\numberline {3.3.2}Processing Pipeline}{23}{}%
+\contentsline {subsection}{\numberline {3.3.3}Frontend}{24}{}%
+\contentsline {subsection}{\numberline {3.3.4}Backend and API}{25}{}%
+\contentsline {subsection}{\numberline {3.3.5}Database Schema}{25}{}%
+\contentsline {section}{\numberline {3.4}Super Planner Component}{26}{}%
+\contentsline {subsection}{\numberline {3.4.1}Description}{26}{}%
+\contentsline {subsection}{\numberline {3.4.2}Processing Pipeline}{28}{}%
+\contentsline {subsection}{\numberline {3.4.3}Progress Markers}{29}{}%
+\contentsline {subsection}{\numberline {3.4.4}Frontend}{29}{}%
+\contentsline {subsection}{\numberline {3.4.5}Backend, API, and Database}{30}{}%
+\contentsline {chapter}{\numberline {4}RESULT}{31}{}%
+\contentsline {section}{\numberline {4.1}Results}{31}{}%
+\contentsline {section}{\numberline {4.2}Discussions}{31}{}%
+\contentsline {chapter}{\numberline {5}Conclusion}{32}{}%
+\contentsline {section}{\numberline {5.1}Conclusion}{32}{}%
+\contentsline {section}{\numberline {5.2}Obstacles}{32}{}%
+\contentsline {section}{\numberline {5.3}Future Work}{32}{}%
+\contentsline {chapter}{REFERENCES}{33}{}%

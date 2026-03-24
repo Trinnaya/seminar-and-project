@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -32,11 +32,32 @@ E.~Fergan and T.~M. Tashu.
   Computing (BESC)}, pages 1--7, Larnaca, Cyprus, 2023.
 \newblock \doi{10.1109/BESC59560.2023.10386515}.
 
+\bibitem[Hegghammer(2022)]{paper_16}
+T.~Hegghammer.
+\newblock {OCR with Tesseract, Amazon Textract, and Google Document AI: a
+  benchmarking experiment}.
+\newblock \emph{Journal of Computational Social Science}, 5\penalty0
+  (1):\penalty0 861--882, 2022.
+\newblock \doi{10.1007/s42001-021-00149-1}.
+
 \bibitem[Inc.(n.d.)]{stellic}
 S.~Inc.
 \newblock Stellic: Degree management and student success platform.
 \newblock https://www.stellic.com/, n.d.
 \newblock Accessed: 2025-02-11.
+
+\bibitem[Kleinberg and Tardos(2005)]{kleinberg2005algorithm}
+J.~Kleinberg and E.~Tardos.
+\newblock \emph{Algorithm Design}.
+\newblock Pearson Education, Boston, MA, 2005.
+\newblock ISBN 978-0-321-29535-4.
+
+\bibitem[Li et~al.(2025)Li, Lee, and Liu]{paper_17}
+D.-L. Li, S.-K. Lee, and Y.-T. Liu.
+\newblock Printed document layout analysis and optical character recognition
+  system based on deep learning.
+\newblock \emph{Scientific Reports}, 15:\penalty0 23761, 2025.
+\newblock \doi{10.1038/s41598-025-07439-y}.
 
 \bibitem[L.P.(n.d.)]{degreeworks}
 E.~C. L.P.
@@ -69,9 +90,9 @@ M.~L. Pandini, Z.~Arifin, and D.~M. Khairina.
   Semarang, Indonesia, 11 2014.
 \newblock \doi{10.1109/ICITACEE.2014.7065760}.
 
-\bibitem[{Rate My Professors}(2024)]{ratemyprofessors}
+\bibitem[{Rate My Professors}()]{ratemyprofessors}
 {Rate My Professors}.
-\newblock Rate my professors, 2024.
+\newblock Rate my professors.
 \newblock URL \url{https://www.ratemyprofessors.com}.
 
 \bibitem[Trippel and Röpke(2025)]{trippel2025developing}
@@ -97,6 +118,14 @@ M.~K. Warsi, K.~Baghel, C.~Gupta, and S.~Alphonse.
 \newblock In \emph{2025 International Conference on Innovative Trends in
   Information Technology (ICITIIT)}, pages 1--5, Kottayam, India, 02 2025.
 \newblock \doi{10.1109/ICITIIT64777.2025.11040918}.
+
+\bibitem[Xiong et~al.(2018)]{paper_18}
+N.~N. Xiong et~al.
+\newblock Color sensors and their applications based on real-time color image
+  segmentation for cyber physical systems.
+\newblock \emph{EURASIP Journal on Image and Video Processing}, 2018\penalty0
+  (23), 2018.
+\newblock \doi{10.1186/s13640-018-0258-x}.
 
 \bibitem[Zhu et~al.(2025)Zhu, Zhou, and Luo]{paper_3}
 Z.~Zhu, Y.~Zhou, and Q.~Luo.

@@ -10,14 +10,14 @@
 	\label{fig:sysarch}
 \end{figure}
 
-\subsection{Presentation Layer (Frontend)}
+\subsection{Frontend Layer}
 The Frontend of the system is built using React, a component-based JavaScript library that enables dynamic and responsive user interfaces. Each of the three core functions — Schedule Matcher, Rate-My-Course, and Super Planner — is implemented as an independent module where users can navigate between features.
 
 The interface is designed with a focus on simplicity and visual clarity, which is especially important for the Super Planner's drag-and-drop canvas and the Schedule Matcher's result display. React state management handles real-time UI updates, such as rendering matched free-time slots after scheduled images are processed, or updating course ratings as new submissions come in.
 
 The Authentication Session UI is handled at the presentation layer, where users see and interact with related to their login state, for example: the login page, displaying the logged-in student's name or ID on the taskbar, a logout button, disabling or hiding buttons based on whether the user is logged in, and protected routes redirected.
 
-\subsection{Application Layer (Backend)}
+\subsection{Backend Layer}
 The Backend is built using Node.js and Express.js, forming a RESTful API server that handles all communication between the frontend and the database. Express.js routes are organized by function, with separate route groups for schedule matching, course rating, and academic planning. 
 
 Image processing for the Schedule Matcher is handled entirely within this layer using JavaScript-native libraries — Tesseract.js for OCR and OpenCV.js for color segmentation This keeps the entire stack in a single language, simplifies deployment, and reduces points of failure. 
@@ -89,8 +89,13 @@ The Schedule Matcher interface allows users to upload multiple schedule images a
 \subsection{Backend, API, and Database}
 The Express.js backend exposes an upload endpoint that receives image files from the frontend and passes them through the processing pipeline described in Section 3.2.2. Once processing is complete, the structured busy map data for each uploaded schedule is temporarily written to the schedules collection in MongoDB before the matching algorithm runs across all uploaded schedules in the session.
 
-Each document in the schedules collection follows a lightweight structure containing a session identifier, an optional student label, a timestamp, and the extracted busy map represented as an array of occupied time slot objects. Each time slot object holds a day field and a start and end time derived from the coordinate mapping step. 
-
+Each document in the schedules collection follows a lightweight structure containing a session identifier, an optional student label, a timestamp, and the extracted busy map represented as an array of occupied time slot objects. Each time slot object holds a day field and a start and end time derived from the coordinate mapping step. An example document is as follows:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{sm_db}
+	\caption{Schedule Matcher schedules collection example}
+	\label{fig:sm_db}
+\end{figure}
 
 The session identifier groups all uploaded schedules belonging to the same matching request together, allowing the Master Busy Map algorithm to retrieve and compare all relevant documents in a single query. Once the matching results have been computed and returned to the frontend, all documents sharing that session identifier are deleted from the collection. This ensures that the schedules collection functions purely as a short-lived working space rather than a persistent data store, keeping the database lean and avoiding unnecessary retention of student schedule data.
 
